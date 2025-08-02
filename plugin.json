@@ -1,0 +1,44 @@
+{
+    "id": "search_web",
+    "code": "",
+    "uuid": "90599821-4584-4663-9aa8-c5543a20fcb0",
+    "emoji": "🧩",
+    "title": "Web Search (Serp)",
+    "httpAction": {
+        "id": "39442ea9-287b-4b06-951d-10291490295a",
+        "url": "https://cloud.typingmind.com/api/plugins/serp/search?api_key={serpAPIKey}&engine=google&q={query}&json_restrictor=organic_results[].{title,snippet,source,link}",
+        "name": "",
+        "method": "GET"
+    },
+    "openaiSpec": {
+        "name": "search_web",
+        "parameters": {
+            "type": "object",
+            "required": [
+                "query"
+            ],
+            "properties": {
+                "query": {
+                    "type": "string",
+                    "description": "The query to search"
+                }
+            }
+        },
+        "description": "Search the web using SERP API (Google search engine)"
+    },
+    "outputType": "respond_to_ai",
+    "oauthConfig": null,
+    "userSettings": [
+        {
+            "name": "serpAPIKey",
+            "type": "password",
+            "label": "Serp API Key",
+            "required": true,
+            "description": "Enter your Serp API Key here, if you don't have one, sign up from serpapi.com"
+        }
+    ],
+    "overviewMarkdown": "## Web Search (SerpApi)\n\nThis plugin allows the AI assistant to search for information from the internet in real-time using Google Search.\n\n**🔑 Serp API Key needed**. Click the Settings tab and enter your Serp API Key. To get your API Key, [create a Serp account](https://serpapi.com/)\n\nExample usage:\n\n> What's the gold price today?\n\n> How's the weather in SF at the moment?\n",
+    "authenticationType": "AUTH_TYPE_NONE",
+    "implementationType": "http",
+    "dynamicContextEndpoints": []
+}
