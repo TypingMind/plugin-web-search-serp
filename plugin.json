@@ -3,6 +3,7 @@
     "code": "",
     "uuid": "90599821-4584-4663-9aa8-c5543a20fcb0",
     "emoji": "🧩",
+    "iconURL": "https://raw.githubusercontent.com/TypingMind/plugin-web-search-serp/refs/heads/main/icon.webp",
     "title": "Web Search (Serp)",
     "httpAction": {
         "id": "39442ea9-287b-4b06-951d-10291490295a",
